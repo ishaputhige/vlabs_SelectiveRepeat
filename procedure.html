@@ -1,51 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procedure</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Virtual Labs </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="bootstrap2.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="min.css">
 </head>
 
-<body>
-    <style>
-        .container {
-            border: 1px solid silver;
-            margin-top: 7%;
-            width: 60%;
-        }
-        
-        .container p {
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        li {
-            list-style-type: upper-roman;
-        }
-        
-        button {
-            position: absolute;
-            top: 4%;
-            right: 4%;
-        }
-    </style>
+<body class="hold-transition skin-blue sidebar-mini">
+    <!--Navigation Bar-->
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-    <div class="container">
-        <p> Procedure for Selective Repeat ARQ</p>
-        <ol>
-            <li>The aim is to introduce the students to the working of the Selective Repeat ARQ and how this algorithm behaves under the situations such as Acknowledgement Lost, Frame Lost, Corrupted Frame and Negative Acknowledgment.</li>
-            <li>Once one selects the Selective Repeat ARQ, then they are required to choose the frame size for which the simulation is desired.</li>
-            <li>For the respective frame size, the simulation begins with an array representing the frames in the left of the screen and the instructions prompted in the right side of the screen.</li>
-            <li>The user makes the right selections in the array for the simulation to be played further.</li>
-            <li>If the user fails to select the correct frames at any point of simulation , the “Wrong Frame Selected” is prompted on the right side of the screen and until the user successfully selects the correct frames , the simulation does not proceed
-                and the User is given as many retries as needed.</li>
-            <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
-            <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
-        </ol>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">LABS</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">GITLAB</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <a href="index.html"><button class="btn btn-outline-primary"> Go Back</button></a>
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <p align="center" style="font-size:1em;"><b>Computer Networks<!-- Write your lab name --></b></p>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+
+                </a>
+                <section class="content-header">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#"><i class="fa fa-dashboard"></i>Computer Networks<!-- Write your lab name --></a>
+                        </li>
+                        <li>
+                            <a href="#">Selective Repeat Protocol<!-- Write your experiment name --></a>
+                        </li>
+                        <li class="active">Procedure</li>
+                    </ol>
+                </section>
+            </nav>
+        </header>
+
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group"></div>
+                </form>
+                <!-- /.sear ch form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="treeview">
+                        <a href="index.html">
+                            <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="theory.html">
+                            <i class="fa fa-files-o"></i>
+                            <span>Theory</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="pretest.html">
+                            <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                        </a>
+                    </li>
+
+                    <li class="active treeview">
+                        <a href="#">
+                            <i class="fa fa-files-o"></i> <span>Procedure</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="public/simulation.html">
+                            <i class="fa fa-laptop"></i>
+                            <span>Simulation</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li class="treeview">
+                        <a href="posttest.html">
+                            <i class="fa fa-files-o"></i>
+                            <span>Post Test</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="reference.html">
+                            <i class="fa fa-files-o"></i>
+                            <span>References</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1 align="center">
+                    Selective Repeat Protocol
+                </h1>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+
+                    <div class="btn-toolbar mb-2 mb-md-0">
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <p> Procedure for Selective Repeat ARQ</p>
+                    <ol>
+                        <li>The aim is to introduce the students to the working of the Selective Repeat ARQ and how this algorithm behaves under the situations such as Acknowledgement Lost, Frame Lost, Corrupted Frame and Negative Acknowledgment.</li>
+                        <li>Once one selects the Selective Repeat ARQ, then they are required to choose the frame size for which the simulation is desired.</li>
+                        <li>For the respective frame size, the simulation begins with an array representing the frames in the left of the screen and the instructions prompted in the right side of the screen.</li>
+                        <li>The user makes the right selections in the array for the simulation to be played further.</li>
+                        <li>If the user fails to select the correct frames at any point of simulation , the “Wrong Frame Selected” is prompted on the right side of the screen and until the user successfully selects the correct frames , the simulation does
+                            not proceed and the User is given as many retries as needed.</li>
+                        <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
+                        <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
+                    </ol>
+                </div>
+        </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <h4 align="center"><a href="https://www.bennett.edu.in/"> Computer Science & Engineering Department, Bennett University, Greater Noida, UP </a></h4>
+    </footer>
+    <!-- /.control-sidebar -->
+    </div>
 </body>
 
 </html>
+
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
