@@ -8,9 +8,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 </head>
+<script>
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
 <style>
     #topcorner {
         position: absolute;
@@ -154,45 +163,29 @@
         <a href="selective_r.html">
             <h3>Select-Repeat ARQ</h3>
         </a>
-    </div>
-    <button id="btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Instruction Tab</button>
-    <div class="btn-group">
+        <div>
+            <button id="btn" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Choose frame size from the list, the array on the left represent the frames. The user needs to make the right selections in the array for the simulation to run further.If the user fails to select the correct frames at any point of simulation 'Wrong frame selected' is displayed and the simulation doessnt continue until the correct frame is selected .">
+                Instruction
+              </button>
+        </div>
 
-    </div>
+        <div class="footer">
+            <P>Copyrights Virtual lab IIT Roorkee</P>
+        </div>
 
-    <div class="sidebar">
-        <p>Procedure for Selective Repeat ARQ</p>
-        <button class="sidebar-close-button" onclick="closeMenu()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
-        <ol>
+        <script src="./js/selective5.js"></script>
+        <script>
+            function openMenu() {
+                document.querySelector(".sidebar").classList.add("open");
+            }
 
-            <li>The aim is to introduce the students to the working of the Selective Repeat ARQ and how this algorithm behaves under the situations such as Acknowledgement Lost, Frame Lost, Corrupted Frame and Negative Acknowledgment.</li>
-            <li>Once one selects the Selective Repeat ARQ, then they are required to choose the frame size for which the simulation is desired.</li>
-            <li>For the respective frame size, the simulation begins with an array representing the frames in the left side of the page and the instructions prompted in the right side of the page.</li>
-            <li>The user needs to make the right selections in the array for the simulation to run further. </li>
-            <li>If the user fails to select the correct frames at any point of simulation , the “Wrong Frame Selected” is prompted on the right side of the screen and until the user successfully selects the correct frames , the simulation does not proceed
-                and the User is given as many retries as needed.</li>
-            <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
-            <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
-        </ol>
-    </div>
-
-    <div class="footer">
-        <P>Copyrights Virtual lab IIT Roorkee</P>
-    </div>
-
-    <script src="./js/selective5.js"></script>
-    <script>
-        function openMenu() {
-            document.querySelector(".sidebar").classList.add("open");
-        }
-
-        function closeMenu() {
-            document.querySelector(".sidebar").classList.remove("open")
-        }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            function closeMenu() {
+                document.querySelector(".sidebar").classList.remove("open")
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 
