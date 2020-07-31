@@ -32,7 +32,13 @@
             position: absolute;
         top: 15%;
         right: 6%; 
+        background: white !important;
+        color: #2C99CE;
+        border: 1px solid black;
         
+        }
+        #btn:hover{
+            color: #77BB41;
         }
         .block{
             display: none;
@@ -74,10 +80,5 @@ a{
     color: #2C99CE;
 }
 a:hover{
-    color: #77BB41;
+    color: #77BB41 !important;
 }
-
-
-
-
-
