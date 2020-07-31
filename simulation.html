@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="bootstrap2.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .parent {
+            width: 800px;
+            height: 300px;
+            padding: 3%;
+            margin: 9%;
+            margin-left: 19%;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -62,7 +73,7 @@
                         <li>
                             <a href="#">FLOW CONTROL PROTOCOLS<!-- Write your experiment name --></a>
                         </li>
-                        <li class="active">Aim</li>
+                        <li class="active">simulation</li>
                     </ol>
                 </section>
             </nav>
@@ -80,7 +91,7 @@
                 <!-- /.sear ch form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu">
-                    <li class="active treeview">
+                    <li class="treeview">
                         <a href="index.html">
                             <i class="fa fa-files-o"></i> <span>Aim</span>
 
@@ -104,7 +115,7 @@
                             <i class="fa fa-files-o"></i> <span>Procedure</span>
                         </a>
                     </li>
-                    <li class="treeview">
+                    <li class="active treeview">
                         <a href="simulation.html">
                             <i class="fa fa-laptop"></i>
                             <span>Simulation</span>
@@ -138,19 +149,27 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-                <h1 align="center">
+                <h1 style="margin-left: 34%;">
                     FLOW CONTROL PROTOCOLS
                 </h1>
             </section>
             <!-- Main content -->
             <section class="content">
-                <h3 style="margin-top:5%"> Aim </h3>
-                <p style="font-size:130%; margin-top:2%">
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 
-                    <!--Aim of experiment -->
+                        <div class="btn-toolbar mb-2 mb-md-0">
 
-                    To Simulate and to study Selective repeat protocol.
-                </p>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <h1>Welcome To Flow Control Simulation</h1>
+                        <p>Click Any Button To Start Simulation </p><br>
+                        <p></p><i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i><br><br>
+                        <a href="public/simulation.html"><button type="button" class="btn btn-primary">Start Simulation</button></a>
+
+                    </div>
+                </main>
             </section>
             <!-- /.content -->
         </div>
@@ -160,9 +179,7 @@
         </footer>
         <!-- /.control-sidebar -->
     </div>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 </body>
 
 </html>
-
-<!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
